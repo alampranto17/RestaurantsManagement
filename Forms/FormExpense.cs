@@ -66,20 +66,23 @@ namespace Forms
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
-            this.ShowInitialInfo();
+            
             this.PopulateGridViewOnAction();
+            this.ShowInitialInfo();
         }
 
         private void dtpStartDate_ValueChanged(object sender, EventArgs e)
         {
-            this.ShowInitialInfo();
+            
             this.PopulateGridViewOnAction();
+            this.ShowInitialInfo();
         }
 
         private void dtpEndDate_ValueChanged(object sender, EventArgs e)
         {
-            this.ShowInitialInfo();
+            
             this.PopulateGridViewOnAction();
+            this.ShowInitialInfo();
         }
 
         public void ClearAll()
