@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+Your local changes
+=======
+Remote changes from the repository
+>>>>>>> 009444d
+
 # **Restaurant Management Desktop Application (C#)**
 
 ### **📜 Overview**  
