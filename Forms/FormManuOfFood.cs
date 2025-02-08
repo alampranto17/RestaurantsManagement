@@ -68,23 +68,29 @@ namespace Forms
         {
             string FoodName = this.dgvFoodTable.CurrentRow.Cells[1].Value.ToString();
 
+            try
+            {
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete {FoodName}?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.No)
+                {
+                    return;
+                }
 
-            DialogResult result = MessageBox.Show($"Are you sure you want to delete {FoodName}?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-            if (result == DialogResult.No)
-            {
-                return;
+                string sql = $"DELETE FROM Manu WHERE FoodID = '{FoodId}'";
+                int cnt = this.da.ExecuteDMLQuery(sql);
+                if (cnt == 1)
+                {
+                    MessageBox.Show($"{FoodName} has been removed successfully.", "Deletion Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.PopulateGridViewOnAction();
+                }
+                else
+                {
+                    MessageBox.Show($"Failed to remove {FoodName}. Please try again.", "Deletion Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-
-            string sql = $"DELETE FROM Manu WHERE FoodID = '{FoodId}'";
-            int cnt = this.da.ExecuteDMLQuery(sql);
-            if (cnt == 1)
+            catch (Exception ex)
             {
-                MessageBox.Show($"{FoodName} has been removed successfully.", "Deletion Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.PopulateGridViewOnAction();
-            }
-            else
-            {
-                MessageBox.Show($"Failed to remove {FoodName}. Please try again.", "Deletion Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Error :"+ex.Message);
             }
         }
 

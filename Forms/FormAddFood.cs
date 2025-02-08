@@ -75,7 +75,7 @@ namespace Forms
             this.txtFoodName.Clear();
             this.txtPrice.Clear();
             this.txtStockQuantity.Clear();
-            this.cbCategory.Items.Clear();
+            this.cbCategory.SelectedIndex=-1;
         }
 
 

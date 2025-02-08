@@ -348,13 +348,14 @@ namespace Forms
 
 
 
-            this.FormSales.Show();
-            this.FormSales.ClearAll();
-            this.FormSales.PopulateGridViewOnAction();
-            this.ClearAll();
-            isOpen = false;
-            FormSales.isOpen = true;
-            this.Hide();
+            if (!FormSales.isOpen)
+            {
+                new FormSales(currentUser).Show();
+                this.ClearAll();
+                isOpen = false;
+                FormSales.isOpen = true;
+                this.Hide();
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
