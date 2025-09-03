@@ -243,9 +243,11 @@ This project is licensed under the MIT License.
   ![Add Attendance](https://github.com/alampranto17/RestaurantsManagement/blob/master/Image/AddAttendance.png)
 
 - **Invoices**
+  
   ![Invoices](https://github.com/alampranto17/RestaurantsManagement/blob/master/Image/Invoices.png)
 
 - **Invoices Print**
+  
   ![Invoices Print](https://github.com/alampranto17/RestaurantsManagement/blob/master/Image/Invoices%20print%20.png)
 
  (Updated)
