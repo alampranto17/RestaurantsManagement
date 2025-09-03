@@ -3,7 +3,7 @@ Your local changes
 =======
 Remote changes from the repository
 
-> > > > > > > 009444d
+
 
 # **Restaurant Management Desktop Application (C#)**
 
@@ -248,4 +248,4 @@ This project is licensed under the MIT License.
 - **Invoices Print**
   ![Invoices Print](https://github.com/alampranto17/RestaurantsManagement/blob/master/Image/Invoices%20print%20.png)
 
-> > > > > > > 1fe25cd (Updated)
+ (Updated)
