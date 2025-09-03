@@ -231,9 +231,11 @@ This project is licensed under the MIT License.
   ![Attendance](https://github.com/alampranto17/RestaurantsManagement/blob/master/Image/attendance.png)
 
 - **Food Add/Edit**
+
   ![Food Add/Edit](https://github.com/alampranto17/RestaurantsManagement/blob/master/Image/AddFood.png)
 
 - **Edit Food**
+  
   ![Edit Food](https://github.com/alampranto17/RestaurantsManagement/blob/master/Image/EditFood.png)
 
 - **Sales**
