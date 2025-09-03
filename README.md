@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 Your local changes
 =======
 Remote changes from the repository
